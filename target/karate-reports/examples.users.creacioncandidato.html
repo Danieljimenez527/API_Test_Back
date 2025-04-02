@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,19 +49,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-04-01 10:43:38 a. m.</div>
+    <div>2025-04-02 04:09:51 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:6]"><span>[1:6]</span> <span>Registrar un nuevo candidato correctamente</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:33]"><span>[2:33]</span> <span>No permitir crear un candidato con datos incompletos</span></a>
+            <a href="#[2:32]"><span>[2:32]</span> <span>No permitir crear un candidato con datos incompletos</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[3:60]"><span>[3:60]</span> <span>No permitir la creación de un candidato duplicado</span></a>
+            <a href="#[3:59]"><span>[3:59]</span> <span>No permitir la creación de un candidato duplicado</span></a>
           </div>
         </div>
       </div>
@@ -86,8 +86,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>80</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>96</span>
             </div>
           </div>
           <div class="step-row">
@@ -119,7 +119,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">10:43:38.382 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">16:09:51.874 karate.env system property was: null 
 </div>   
 
   
@@ -145,19 +145,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
    
   
   <div class="preformatted" data-parent="0.7">{
-  &quot;name&quot;: &quot;Pablo Jose&quot;,
-  &quot;lastName&quot;: &quot;Osorio Jimenez&quot;,
-  &quot;card&quot;: 1000234500,
-  &quot;phone&quot;: 3002004055,
-  &quot;city&quot;: &quot;Manizales&quot;,
+  &quot;name&quot;: &quot;Daniel Jose&quot;,
+  &quot;lastName&quot;: &quot;Ortiz Jimenez&quot;,
+  &quot;card&quot;: 1038234554,
+  &quot;phone&quot;: 3212004077,
+  &quot;city&quot;: &quot;Bucaramanga&quot;,
   &quot;email&quot;: &quot;pablito@gmail.com&quot;,
-  &quot;birthdate&quot;: &quot;1999-01-01&quot;,
+  &quot;birthdate&quot;: &quot;1997-01-01&quot;,
   &quot;source&quot;: &quot;Computrabajo&quot;,
   &quot;skills&quot;: &quot;Java, MySQL, C+&quot;,
-  &quot;yearsExperience&quot;: &quot;2&quot;,
+  &quot;yearsExperience&quot;: &quot;3&quot;,
   &quot;workExperience&quot;: &quot;developer&quot;,
   &quot;seniority&quot;: &quot;junior&quot;,
-  &quot;salaryAspiration&quot;: 3000000,
+  &quot;salaryAspiration&quot;: 3200000,
   &quot;level&quot;: 13,
   &quot;datePresentation&quot;: &quot;2025-03-01&quot;,
   &quot;origin&quot;: 1,
@@ -185,7 +185,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">72</div>
+    <div class="time-cell passed">95</div>
   </div>
 
    
@@ -194,24 +194,24 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">10:43:38.448 request:
+  <div class="preformatted" data-parent="0.29">16:09:51.946 request:
 1 &gt; POST http://localhost:8080/api/candidate/
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 377
+1 &gt; Content-Length: 379
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Pablo Jose&quot;,&quot;lastName&quot;:&quot;Osorio Jimenez&quot;,&quot;card&quot;:1000234500,&quot;phone&quot;:3002004055,&quot;city&quot;:&quot;Manizales&quot;,&quot;email&quot;:&quot;pablito@gmail.com&quot;,&quot;birthdate&quot;:&quot;1999-01-01&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;2&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;junior&quot;,&quot;salaryAspiration&quot;:3000000,&quot;level&quot;:13,&quot;datePresentation&quot;:&quot;2025-03-01&quot;,&quot;origin&quot;:1,&quot;jobProfile&quot;:1}
+{&quot;name&quot;:&quot;Daniel Jose&quot;,&quot;lastName&quot;:&quot;Ortiz Jimenez&quot;,&quot;card&quot;:1038234554,&quot;phone&quot;:3212004077,&quot;city&quot;:&quot;Bucaramanga&quot;,&quot;email&quot;:&quot;pablito@gmail.com&quot;,&quot;birthdate&quot;:&quot;1997-01-01&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;3&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;junior&quot;,&quot;salaryAspiration&quot;:3200000,&quot;level&quot;:13,&quot;datePresentation&quot;:&quot;2025-03-01&quot;,&quot;origin&quot;:1,&quot;jobProfile&quot;:1}
 
-10:43:38.455 response time in milliseconds: 7
-1 &lt; 409
+16:09:51.971 response time in milliseconds: 24
+1 &lt; 201
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 01 Apr 2025 15:43:38 GMT
+1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;Message&quot;:&quot;There is already a id card with that number&quot;}
+{&quot;id&quot;:13,&quot;name&quot;:&quot;Daniel Jose&quot;,&quot;lastName&quot;:&quot;Ortiz Jimenez&quot;,&quot;card&quot;:1038234554,&quot;phone&quot;:3212004077,&quot;city&quot;:&quot;Bucaramanga&quot;,&quot;email&quot;:&quot;pablito@gmail.com&quot;,&quot;birthdate&quot;:&quot;1997-01-01&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;3&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;junior&quot;,&quot;salaryAspiration&quot;:&quot;3200000&quot;,&quot;level&quot;:13,&quot;datePresentation&quot;:&quot;2025-03-01&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;}
 
 </div>   
 
@@ -226,46 +226,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.30">
-      <div class="step-ref failed">30</div>
+      <div class="step-ref passed">30</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 404</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell failed">7</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.30">10:43:38.465 classpath:examples/users/creacioncandidato.feature:30
-Then status 404
-status code was: 409, expected: 404, response time in milliseconds: 7, url: http://localhost:8080/api/candidate/, response: 
-{&quot;Message&quot;:&quot;There is already a id card with that number&quot;}
-classpath:examples/users/creacioncandidato.feature:30
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.31">
-      <div class="step-ref skipped">31</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.message == {&quot;Message&quot;:&quot;There is already a id card with that number&quot;}</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -282,29 +249,29 @@ classpath:examples/users/creacioncandidato.feature:30
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:33]">
+          <div class="scenario-heading" id="[2:32]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:33]</span>
+                Scenario: <span>[2:32]</span>
                 <span class="scenario-name">No permitir crear un candidato con datos incompletos</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>7</span>
+              <span>ms:</span>&nbsp;<span>8</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:33]bg">
+            <div class="step-container" id="[2:32]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:33]bg"><div>
+          <div data-parent="[2:32]bg"><div>
   
 
   
@@ -326,7 +293,7 @@ classpath:examples/users/creacioncandidato.feature:30
 
   
 
-  <div class="preformatted" data-parent="0.4">10:43:38.488 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">16:09:51.977 karate.env system property was: null 
 </div>   
 
   
@@ -339,8 +306,8 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>request</span>
@@ -351,7 +318,7 @@ classpath:examples/users/creacioncandidato.feature:30
 
    
   
-  <div class="preformatted" data-parent="0.34">{
+  <div class="preformatted" data-parent="0.33">{
   &quot;name&quot;: &quot;Andres&quot;,
   &quot;lastName&quot;: &quot;Parra&quot;,
   &quot;card&quot;: null,
@@ -385,8 +352,8 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.56">
-      <div class="step-ref passed">56</div>
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
@@ -401,7 +368,7 @@ classpath:examples/users/creacioncandidato.feature:30
 
   
 
-  <div class="preformatted" data-parent="0.56">10:43:38.490 request:
+  <div class="preformatted" data-parent="0.55">16:09:51.979 request:
 1 &gt; POST http://localhost:8080/api/candidate/
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 359
@@ -411,11 +378,11 @@ classpath:examples/users/creacioncandidato.feature:30
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Andres&quot;,&quot;lastName&quot;:&quot;Parra&quot;,&quot;card&quot;:null,&quot;phone&quot;:3002004050,&quot;city&quot;:&quot;Quibdo&quot;,&quot;email&quot;:&quot;pablito@gmail.com&quot;,&quot;birthdate&quot;:&quot;1999-12-12&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Angular, AWS, MySQL&quot;,&quot;yearsExperience&quot;:&quot;2&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;junior&quot;,&quot;salaryAspiration&quot;:3500000,&quot;level&quot;:13,&quot;datePresentation&quot;:&quot;2025-03-01&quot;,&quot;origin&quot;:1,&quot;jobProfile&quot;:1}
 
-10:43:38.494 response time in milliseconds: 4
+16:09:51.982 response time in milliseconds: 3
 1 &lt; 400
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 01 Apr 2025 15:43:38 GMT
+1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
 1 &lt; Connection: close
 {&quot;card&quot;:&quot;card cannot be null&quot;}
 
@@ -431,8 +398,8 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 400</span>
@@ -459,14 +426,14 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.58">
-      <div class="step-ref passed">58</div>
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response == { &quot;card&quot;: &quot;card cannot be null&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -483,13 +450,13 @@ classpath:examples/users/creacioncandidato.feature:30
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[3:60]">
+          <div class="scenario-heading" id="[3:59]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[3:60]</span>
+                Scenario: <span>[3:59]</span>
                 <span class="scenario-name">No permitir la creación de un candidato duplicado</span>
                 <span></span>
               </div>
@@ -499,13 +466,13 @@ classpath:examples/users/creacioncandidato.feature:30
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[3:60]bg">
+            <div class="step-container" id="[3:59]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[3:60]bg"><div>
+          <div data-parent="[3:59]bg"><div>
   
 
   
@@ -527,7 +494,7 @@ classpath:examples/users/creacioncandidato.feature:30
 
   
 
-  <div class="preformatted" data-parent="0.4">10:43:38.502 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">16:09:51.991 karate.env system property was: null 
 </div>   
 
   
@@ -540,8 +507,8 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.61">
-      <div class="step-ref passed">61</div>
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>request</span>
@@ -552,7 +519,7 @@ classpath:examples/users/creacioncandidato.feature:30
 
    
   
-  <div class="preformatted" data-parent="0.61">{
+  <div class="preformatted" data-parent="0.60">{
   &quot;name&quot;: &quot;Pablo Jose&quot;,
   &quot;lastName&quot;: &quot;Osorio Jimenez&quot;,
   &quot;card&quot;: 1000234567,
@@ -586,14 +553,14 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.88">
-      <div class="step-ref passed">88</div>
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -602,7 +569,7 @@ classpath:examples/users/creacioncandidato.feature:30
 
   
 
-  <div class="preformatted" data-parent="0.88">10:43:38.504 request:
+  <div class="preformatted" data-parent="0.87">16:09:51.992 request:
 1 &gt; POST http://localhost:8080/api/candidate/
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 377
@@ -612,11 +579,11 @@ classpath:examples/users/creacioncandidato.feature:30
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Pablo Jose&quot;,&quot;lastName&quot;:&quot;Osorio Jimenez&quot;,&quot;card&quot;:1000234567,&quot;phone&quot;:3002004050,&quot;city&quot;:&quot;Manizales&quot;,&quot;email&quot;:&quot;pablito@gmail.com&quot;,&quot;birthdate&quot;:&quot;1999-01-01&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;2&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;junior&quot;,&quot;salaryAspiration&quot;:3000000,&quot;level&quot;:13,&quot;datePresentation&quot;:&quot;2025-03-01&quot;,&quot;origin&quot;:1,&quot;jobProfile&quot;:1}
 
-10:43:38.509 response time in milliseconds: 5
+16:09:51.998 response time in milliseconds: 6
 1 &lt; 409
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 01 Apr 2025 15:43:38 GMT
+1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;Message&quot;:&quot;There is already a id card with that number&quot;}
@@ -633,8 +600,8 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.89">
-      <div class="step-ref passed">89</div>
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 409</span>
@@ -661,8 +628,8 @@ classpath:examples/users/creacioncandidato.feature:30
   
 
   <div class="step-row">
-    <div class="step-container" id="0.90">
-      <div class="step-ref passed">90</div>
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response == { &quot;Message&quot;: &quot;There is already a id card with that number&quot; }</span>

@@ -7,19 +7,19 @@ Feature: creacion de candidatos
     Given request
     """
     {
-      "name": "Pablo Jose",
-      "lastName": "Osorio Jimenez",
-      "card": 1000234500,
-      "phone": 3002004055,
-      "city": "Manizales",
+      "name": "Daniel Jose",
+      "lastName": "Ortiz Jimenez",
+      "card": 1038234554,
+      "phone": 3212004077,
+      "city": "Bucaramanga",
       "email": "pablito@gmail.com",
-      "birthdate": "1999-01-01",
+      "birthdate": "1997-01-01",
       "source": "Computrabajo",
       "skills": "Java, MySQL, C+",
-      "yearsExperience": "2",
+      "yearsExperience": "3",
       "workExperience": "developer",
       "seniority": "junior",
-      "salaryAspiration": 3000000,
+      "salaryAspiration": 3200000,
       "level": 13,
       "datePresentation": "2025-03-01",
       "origin": 1,
@@ -27,8 +27,7 @@ Feature: creacion de candidatos
     }
     """
     When method POST
-    Then status 404
-    And match response.message == {"Message":"There is already a id card with that number"}
+    Then status 201
 
   Scenario: No permitir crear un candidato con datos incompletos
     Given request

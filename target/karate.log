@@ -6993,3 +6993,1842 @@ classpath:examples/users/creacioncandidato.feature:30
 1 < Connection: keep-alive
 {"Message":"There is already a id card with that number"}
 
+15:28:49.072 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:28:51.264 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:51.942 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:28:52.135 [main] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+15:28:52.248 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+15:28:52.334 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:52.339 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:28:52.361 [main] DEBUG com.intuit.karate - response time in milliseconds: 21
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+15:28:52.391 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:52.404 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:28:52.433 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:28:52.461 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:52.469 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:28:52.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+15:28:52.507 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:52.515 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:28:52.532 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:28:53.595 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:53.678 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234500,"phone":3002004055,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:28:53.694 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:53 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:28:53.703 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:30
+Then status 404
+status code was: 409, expected: 404, response time in milliseconds: 15, url: http://localhost:8080/api/candidate/, response: 
+{"Message":"There is already a id card with that number"}
+classpath:examples/users/creacioncandidato.feature:30
+15:28:53.729 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:53.731 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:28:53.740 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:53 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+15:28:53.746 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:53.749 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:28:53.756 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 01 Apr 2025 20:28:53 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+14:47:42.773 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:47:46.472 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:47.712 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:47:48.394 [main] DEBUG com.intuit.karate - response time in milliseconds: 675
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+14:47:48.545 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+14:47:48.721 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:48.732 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:47:48.762 [main] DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+14:47:48.787 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:48.798 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:47:48.852 [main] DEBUG com.intuit.karate - response time in milliseconds: 54
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+14:47:48.882 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:48.891 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:47:48.933 [main] DEBUG com.intuit.karate - response time in milliseconds: 40
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+14:47:48.968 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:48.979 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:47:49.002 [main] DEBUG com.intuit.karate - response time in milliseconds: 21
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+14:47:50.553 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:50.680 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234500,"phone":3002004055,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+14:47:50.749 [main] DEBUG com.intuit.karate - response time in milliseconds: 69
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:50 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+14:47:50.766 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:30
+Then status 404
+status code was: 409, expected: 404, response time in milliseconds: 69, url: http://localhost:8080/api/candidate/, response: 
+{"Message":"There is already a id card with that number"}
+classpath:examples/users/creacioncandidato.feature:30
+14:47:50.811 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:50.815 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+14:47:50.842 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:50 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+14:47:50.864 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:47:50.875 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+14:47:50.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:47:50 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+14:52:39.454 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:52:45.228 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:46.691 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:52:46.860 [main] DEBUG com.intuit.karate - response time in milliseconds: 158
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:46 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+14:52:47.098 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+14:52:47.322 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:47.336 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:52:47.368 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:47 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+14:52:47.411 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:47.425 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:52:47.449 [main] DEBUG com.intuit.karate - response time in milliseconds: 23
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:47 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+14:52:47.487 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:47.496 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:52:47.522 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:47 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+14:52:47.556 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:47.575 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:52:47.591 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:47 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+14:52:50.746 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:51.004 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234500,"phone":3002004055,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+14:52:51.031 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+14:52:51.053 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:30
+Then status 404
+status code was: 409, expected: 404, response time in milliseconds: 22, url: http://localhost:8080/api/candidate/, response: 
+{"Message":"There is already a id card with that number"}
+classpath:examples/users/creacioncandidato.feature:30
+14:52:51.144 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:51.150 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+14:52:51.167 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:51 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+14:52:51.185 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:52:51.191 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+14:52:51.215 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 19:52:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:31:32.843 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:31:34.230 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:34.597 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:31:34.655 [main] DEBUG com.intuit.karate - response time in milliseconds: 56
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+15:31:34.681 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+15:31:34.728 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:34.731 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:31:34.745 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+15:31:34.754 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:34.757 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:31:34.768 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:31:34.775 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:34.778 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:31:34.791 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+15:31:34.809 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:34.813 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:31:34.824 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:31:35.594 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:35.600 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:31:35.650 [main] DEBUG com.intuit.karate - response time in milliseconds: 50
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:35 GMT
+1 < Connection: close
+{"timestamp":"2025-04-02T20:31:35.646+00:00","status":400,"error":"Bad Request","path":"/api/candidate/"}
+
+15:31:35.652 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:31
+Then status in [201]
+no step-definition method match found for: status in [201]
+classpath:examples/users/creacioncandidato.feature:31
+15:31:35.677 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:35.744 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:31:35.755 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:35 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+15:31:35.764 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:35.767 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:31:35.773 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:31:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:39:14.663 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:39:16.137 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:16.440 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:39:16.475 [main] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+15:39:16.522 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+15:39:16.570 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:16.576 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:39:16.586 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+15:39:16.603 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:16.608 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:39:16.620 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:39:16.636 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:16.642 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:39:16.654 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+15:39:16.667 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:16.673 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:39:16.684 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:39:17.685 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:17.692 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:39:17.700 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:17 GMT
+1 < Connection: close
+{"timestamp":"2025-04-02T20:39:17.699+00:00","status":400,"error":"Bad Request","path":"/api/candidate/"}
+
+15:39:17.705 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:31
+Then status in [201]
+no step-definition method match found for: status in [201]
+classpath:examples/users/creacioncandidato.feature:31
+15:39:17.732 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:17.793 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:39:17.800 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:17 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+15:39:17.815 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:17.818 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:39:17.830 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:39:17 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:46:19.465 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:46:20.887 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:21.209 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:46:21.244 [main] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:21 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+15:46:21.275 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+15:46:21.322 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:21.325 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:46:21.334 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:21 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+15:46:21.348 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:21.354 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:46:21.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:21 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:46:21.376 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:21.382 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:46:21.390 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:21 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+15:46:21.398 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:21.402 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:46:21.411 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:21 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:46:22.095 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:22.139 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 379
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Dario","lastName":"Osorio Martinez","card":1000234513,"phone":3002004021,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-02","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":4000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:46:22.196 [main] DEBUG com.intuit.karate - response time in milliseconds: 57
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:22 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":11,"name":"Pablo Dario","lastName":"Osorio Martinez","card":1000234513,"phone":3002004021,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-02","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":"4000000","level":13,"datePresentation":"2025-03-01","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+15:46:22.200 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:30
+Then status in [201]
+no step-definition method match found for: status in [201]
+classpath:examples/users/creacioncandidato.feature:30
+15:46:22.223 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:22.225 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:46:22.229 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:22 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+15:46:22.236 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:46:22.239 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:46:22.246 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:46:22 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:47:43.850 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:47:45.157 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:45.420 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:47:45.456 [main] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+15:47:45.492 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+15:47:45.535 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:45.537 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:47:45.548 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+15:47:45.557 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:45.560 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:47:45.565 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:47:45.572 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:45.575 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:47:45.584 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+15:47:45.594 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:45.599 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:47:45.606 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:47:46.392 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:46.466 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 379
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Dario","lastName":"Osorio Martinez","card":1000234513,"phone":3002004021,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-02","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":4000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:47:46.475 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:46 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:47:46.478 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:30
+Then status in 201
+no step-definition method match found for: status in 201
+classpath:examples/users/creacioncandidato.feature:30
+15:47:46.504 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:46.507 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:47:46.513 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:46 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+15:47:46.523 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:47:46.526 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:47:46.534 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:47:46 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:49:04.390 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:49:05.652 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:05.915 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:49:05.944 [main] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:05 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+15:49:05.971 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+15:49:06.008 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:06.011 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:49:06.022 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+15:49:06.030 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:06.034 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:49:06.039 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:49:06.046 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:06.049 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:49:06.055 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+15:49:06.064 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:06.066 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:49:06.073 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+15:49:06.812 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:06.862 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 379
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Dario","lastName":"Osorio Martinez","card":1000234533,"phone":3002004033,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-02","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":4000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:49:06.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+15:49:06.875 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:30
+Then status in 201
+no step-definition method match found for: status in 201
+classpath:examples/users/creacioncandidato.feature:30
+15:49:06.913 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:06.917 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:49:06.922 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:06 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+15:49:06.932 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:49:06.937 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+15:49:06.946 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 20:49:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+16:04:38.794 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:04:40.079 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:40.405 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:04:40.442 [main] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:40 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+16:04:40.478 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+16:04:40.521 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:40.525 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:04:40.537 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:40 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+16:04:40.549 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:40.553 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:04:40.560 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:40 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+16:04:40.575 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:40.580 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:04:40.590 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:40 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+16:04:40.602 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:40.606 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:04:40.616 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:40 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+16:04:41.311 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:41.369 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 386
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Daniel","lastName":"Osorio Martinez","card":1035234531,"phone":3112004033,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1998-01-02","source":"Computrabajo","skills":"Javascript, MySQL, C+","yearsExperience":"3","workExperience":"developer","seniority":"junior","salaryAspiration":4000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+16:04:41.389 [main] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":12,"name":"Pablo Daniel","lastName":"Osorio Martinez","card":1035234531,"phone":3112004033,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1998-01-02","source":"Computrabajo","skills":"Javascript, MySQL, C+","yearsExperience":"3","workExperience":"developer","seniority":"junior","salaryAspiration":"4000000","level":13,"datePresentation":"2025-03-01","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+16:04:41.396 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:41.398 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+16:04:41.401 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:41 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+16:04:41.409 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:04:41.411 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+16:04:41.416 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:04:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
+16:09:49.256 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:09:50.713 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:50.983 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:09:51.015 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Raul","lastName":"Rodriguez","card":1000855021,"phone":3158622331,"city":"Cartagena","email":"dalmat08@hotmail.com","birthdate":"2002-11-22","source":"Computrabajo","skills":"Python, SQL, C+","yearsExperience":"2 años","workExperience":"Developer","seniority":"junior","salaryAspiration":"1500000","level":2,"datePresentation":"2025-03-22","originId":2,"originName":"Interno","jobProfileId":2,"jobProfileName":"Dev Backend"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+16:09:51.048 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Raul",
+      "lastName": "Rodriguez",
+      "card": 1000855021,
+      "phone": 3158622331,
+      "city": "Cartagena",
+      "email": "dalmat08@hotmail.com",
+      "birthdate": "2002-11-22",
+      "source": "Computrabajo",
+      "skills": "Python, SQL, C+",
+      "yearsExperience": "2 años",
+      "workExperience": "Developer",
+      "seniority": "junior",
+      "salaryAspiration": "1500000",
+      "level": 2,
+      "datePresentation": "2025-03-22",
+      "originId": 2,
+      "originName": "Interno",
+      "jobProfileId": 2,
+      "jobProfileName": "Dev Backend"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+16:09:51.087 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:51.090 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Juan
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:09:51.100 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"},{"id":4,"name":"Juan Jose","lastName":"Martinez","card":1234567891,"phone":3208902315,"city":"Bogota","email":"Nacional7@gmail.com","birthdate":"1990-05-15","source":"Computrabajo","skills":"Java, spring boot","yearsExperience":"5 años","workExperience":"Developer","seniority":"senior","salaryAspiration":"4000000","level":3,"datePresentation":"2025-03-15","originId":2,"originName":"Interno","jobProfileId":3,"jobProfileName":"Automatizador"}],"currentPage":0,"pageSize":2,"totalPages":1,"totalElements":2}
+
+16:09:51.111 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:51.113 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:09:51.118 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+16:09:51.126 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:51.128 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/1
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:09:51.135 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"name":"Juan","lastName":"Perez","card":1000883010,"phone":3002005060,"city":"Bogotá","email":"juan.perez@example.com","birthdate":"2004-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"1000000","level":1,"datePresentation":"2025-03-27","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+16:09:51.144 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:51.147 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/candidate/id/99999
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:09:51.153 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+16:09:51.874 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:51.946 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 379
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Daniel Jose","lastName":"Ortiz Jimenez","card":1038234554,"phone":3212004077,"city":"Bucaramanga","email":"pablito@gmail.com","birthdate":"1997-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"3","workExperience":"developer","seniority":"junior","salaryAspiration":3200000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+16:09:51.971 [main] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":13,"name":"Daniel Jose","lastName":"Ortiz Jimenez","card":1038234554,"phone":3212004077,"city":"Bucaramanga","email":"pablito@gmail.com","birthdate":"1997-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"3","workExperience":"developer","seniority":"junior","salaryAspiration":"3200000","level":13,"datePresentation":"2025-03-01","originId":1,"originName":"Sub","jobProfileId":1,"jobProfileName":"Dev Front"}
+
+16:09:51.977 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:51.979 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 359
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+16:09:51.982 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+16:09:51.990 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:09:51.992 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pablo Jose","lastName":"Osorio Jimenez","card":1000234567,"phone":3002004050,"city":"Manizales","email":"pablito@gmail.com","birthdate":"1999-01-01","source":"Computrabajo","skills":"Java, MySQL, C+","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3000000,"level":13,"datePresentation":"2025-03-01","origin":1,"jobProfile":1}
+
+16:09:51.998 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is already a id card with that number"}
+
