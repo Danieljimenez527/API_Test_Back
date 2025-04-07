@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-04-02 04:09:51 p. m.</div>
+    <div>2025-04-07 05:56:42 p. m.</div>
   </div>
 </div>
 
@@ -93,7 +93,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>319</span>
+              <span>ms:</span>&nbsp;<span>390</span>
             </div>
           </div>
           <div class="step-row">
@@ -125,7 +125,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">16:09:50.715 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:56:41.600 karate.env system property was: null 
 </div>   
 
   
@@ -173,7 +173,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">287</div>
+    <div class="time-cell passed">357</div>
   </div>
 
    
@@ -182,7 +182,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">16:09:50.984 request:
+  <div class="preformatted" data-parent="0.8">17:56:41.931 request:
 1 &gt; GET http://localhost:8080/api/candidate/search-fullName/Raul%20Rodriguez
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
@@ -190,11 +190,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:09:51.015 response time in milliseconds: 30
+17:56:41.974 response time in milliseconds: 27
 1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 &lt; Date: Mon, 07 Apr 2025 22:56:41 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;candidates&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;Raul&quot;,&quot;lastName&quot;:&quot;Rodriguez&quot;,&quot;card&quot;:1000855021,&quot;phone&quot;:3158622331,&quot;city&quot;:&quot;Cartagena&quot;,&quot;email&quot;:&quot;dalmat08@hotmail.com&quot;,&quot;birthdate&quot;:&quot;2002-11-22&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Python, SQL, C+&quot;,&quot;yearsExperience&quot;:&quot;2 años&quot;,&quot;workExperience&quot;:&quot;Developer&quot;,&quot;seniority&quot;:&quot;junior&quot;,&quot;salaryAspiration&quot;:&quot;1500000&quot;,&quot;level&quot;:2,&quot;datePresentation&quot;:&quot;2025-03-22&quot;,&quot;originId&quot;:2,&quot;originName&quot;:&quot;Interno&quot;,&quot;jobProfileId&quot;:2,&quot;jobProfileName&quot;:&quot;Dev Backend&quot;}],&quot;currentPage&quot;:0,&quot;pageSize&quot;:1,&quot;totalPages&quot;:1,&quot;totalElements&quot;:1}
@@ -246,7 +249,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>print &#39;Respuesta de la API:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -255,7 +258,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.10">16:09:51.049 [print] Respuesta de la API: {
+  <div class="preformatted" data-parent="0.10">17:56:41.990 [print] Respuesta de la API: {
   &quot;candidates&quot;: [
     {
       &quot;id&quot;: 2,
@@ -305,7 +308,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.candidates[0].name == &#39;Raul&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">21</div>
+    <div class="time-cell passed">24</div>
   </div>
 
    
@@ -334,7 +337,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>15</span>
+              <span>ms:</span>&nbsp;<span>25</span>
             </div>
           </div>
           <div class="step-row">
@@ -357,7 +360,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/candidate/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -366,7 +369,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">16:09:51.087 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:56:42.037 karate.env system property was: null 
 </div>   
 
   
@@ -386,7 +389,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;search-fullName/Juan&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -414,7 +417,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">20</div>
   </div>
 
    
@@ -423,7 +426,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.15">16:09:51.090 request:
+  <div class="preformatted" data-parent="0.15">17:56:42.053 request:
 1 &gt; GET http://localhost:8080/api/candidate/search-fullName/Juan
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
@@ -431,14 +434,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:09:51.100 response time in milliseconds: 10
+17:56:42.071 response time in milliseconds: 18
 1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 &lt; Date: Mon, 07 Apr 2025 22:56:42 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;candidates&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Perez&quot;,&quot;card&quot;:1000883010,&quot;phone&quot;:3002005060,&quot;city&quot;:&quot;Bogotá&quot;,&quot;email&quot;:&quot;juan.perez@example.com&quot;,&quot;birthdate&quot;:&quot;2004-10-29&quot;,&quot;source&quot;:&quot;LinkedIn&quot;,&quot;skills&quot;:&quot;Java, SQL, Python&quot;,&quot;yearsExperience&quot;:&quot;3 años&quot;,&quot;workExperience&quot;:&quot;Developer&quot;,&quot;seniority&quot;:&quot;Junior&quot;,&quot;salaryAspiration&quot;:&quot;1000000&quot;,&quot;level&quot;:1,&quot;datePresentation&quot;:&quot;2025-03-27&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Juan Jose&quot;,&quot;lastName&quot;:&quot;Martinez&quot;,&quot;card&quot;:1234567891,&quot;phone&quot;:3208902315,&quot;city&quot;:&quot;Bogota&quot;,&quot;email&quot;:&quot;Nacional7@gmail.com&quot;,&quot;birthdate&quot;:&quot;1990-05-15&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, spring boot&quot;,&quot;yearsExperience&quot;:&quot;5 años&quot;,&quot;workExperience&quot;:&quot;Developer&quot;,&quot;seniority&quot;:&quot;senior&quot;,&quot;salaryAspiration&quot;:&quot;4000000&quot;,&quot;level&quot;:3,&quot;datePresentation&quot;:&quot;2025-03-15&quot;,&quot;originId&quot;:2,&quot;originName&quot;:&quot;Interno&quot;,&quot;jobProfileId&quot;:3,&quot;jobProfileName&quot;:&quot;Automatizador&quot;}],&quot;currentPage&quot;:0,&quot;pageSize&quot;:2,&quot;totalPages&quot;:1,&quot;totalElements&quot;:2}
+{&quot;candidates&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;Juan Jose&quot;,&quot;lastName&quot;:&quot;Martinez&quot;,&quot;card&quot;:1234567891,&quot;phone&quot;:3208902315,&quot;city&quot;:&quot;Bogota&quot;,&quot;email&quot;:&quot;Nacional7@gmail.com&quot;,&quot;birthdate&quot;:&quot;1990-05-15&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, spring boot&quot;,&quot;yearsExperience&quot;:&quot;5 años&quot;,&quot;workExperience&quot;:&quot;Developer&quot;,&quot;seniority&quot;:&quot;senior&quot;,&quot;salaryAspiration&quot;:&quot;4000000&quot;,&quot;level&quot;:3,&quot;datePresentation&quot;:&quot;2025-03-15&quot;,&quot;originId&quot;:2,&quot;originName&quot;:&quot;Interno&quot;,&quot;jobProfileId&quot;:3,&quot;jobProfileName&quot;:&quot;Automatizador&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;Juan Jose&quot;,&quot;lastName&quot;:&quot;Perez Vanegas&quot;,&quot;card&quot;:1036216556,&quot;phone&quot;:3002544044,&quot;city&quot;:&quot;Boyaca&quot;,&quot;email&quot;:&quot;pajaro@gmail.com&quot;,&quot;birthdate&quot;:&quot;1989-08-25&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;5&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;senior&quot;,&quot;salaryAspiration&quot;:&quot;4200000&quot;,&quot;level&quot;:11,&quot;datePresentation&quot;:&quot;2025-04-01&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Juan Daniel&quot;,&quot;lastName&quot;:&quot;Sierra Peña&quot;,&quot;card&quot;:1000025046,&quot;phone&quot;:3015902237,&quot;city&quot;:&quot;Armenia&quot;,&quot;email&quot;:&quot;maceo@gmail.com&quot;,&quot;birthdate&quot;:&quot;2015-10-30&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;5&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;senior&quot;,&quot;salaryAspiration&quot;:&quot;4200000&quot;,&quot;level&quot;:12,&quot;datePresentation&quot;:&quot;2025-02-22&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;},{&quot;id&quot;:19,&quot;name&quot;:&quot;Juan Daniel&quot;,&quot;lastName&quot;:&quot;Sierra Peña&quot;,&quot;card&quot;:1000025041,&quot;phone&quot;:3015902231,&quot;city&quot;:&quot;Amazonas&quot;,&quot;email&quot;:&quot;maceo@gmail.com&quot;,&quot;birthdate&quot;:&quot;2015-10-30&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;5&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;senior&quot;,&quot;salaryAspiration&quot;:&quot;4200000&quot;,&quot;level&quot;:12,&quot;datePresentation&quot;:&quot;2025-02-22&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;},{&quot;id&quot;:20,&quot;name&quot;:&quot;Juan David&quot;,&quot;lastName&quot;:&quot;Sierra Peña&quot;,&quot;card&quot;:1000025011,&quot;phone&quot;:3015902000,&quot;city&quot;:&quot;Amazonas&quot;,&quot;email&quot;:&quot;maceo@gmail.com&quot;,&quot;birthdate&quot;:&quot;2015-10-30&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;5&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;senior&quot;,&quot;salaryAspiration&quot;:&quot;4200000&quot;,&quot;level&quot;:12,&quot;datePresentation&quot;:&quot;2025-02-22&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;Juan Daniel&quot;,&quot;lastName&quot;:&quot;Sierra Peña&quot;,&quot;card&quot;:1112025041,&quot;phone&quot;:3175912232,&quot;city&quot;:&quot;Amazonas&quot;,&quot;email&quot;:&quot;maceo@gmail.com&quot;,&quot;birthdate&quot;:&quot;2015-10-30&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;5&quot;,&quot;workExperience&quot;:&quot;developer&quot;,&quot;seniority&quot;:&quot;senior&quot;,&quot;salaryAspiration&quot;:&quot;4000000&quot;,&quot;level&quot;:12,&quot;datePresentation&quot;:&quot;2025-02-22&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;}],&quot;currentPage&quot;:0,&quot;pageSize&quot;:6,&quot;totalPages&quot;:1,&quot;totalElements&quot;:6}
 
 </div>   
 
@@ -487,7 +493,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.candidates[0].name == &#39;#regex (?i)Juan.*&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -516,7 +522,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>8</span>
+              <span>ms:</span>&nbsp;<span>23</span>
             </div>
           </div>
           <div class="step-row">
@@ -539,7 +545,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/candidate/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -548,7 +554,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">16:09:51.111 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:56:42.091 karate.env system property was: null 
 </div>   
 
   
@@ -568,7 +574,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;search-fullName/María García&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -596,7 +602,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">20</div>
   </div>
 
    
@@ -605,7 +611,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.21">16:09:51.114 request:
+  <div class="preformatted" data-parent="0.21">17:56:42.101 request:
 1 &gt; GET http://localhost:8080/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
@@ -613,11 +619,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:09:51.118 response time in milliseconds: 4
+17:56:42.116 response time in milliseconds: 15
 1 &lt; 404
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 &lt; Date: Mon, 07 Apr 2025 22:56:42 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;Message&quot;:&quot;The candidate does not exist&quot;}
@@ -698,7 +707,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11</span>
+              <span>ms:</span>&nbsp;<span>14</span>
             </div>
           </div>
           <div class="step-row">
@@ -730,7 +739,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">16:09:51.126 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:56:42.125 karate.env system property was: null 
 </div>   
 
   
@@ -778,7 +787,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -787,7 +796,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">16:09:51.128 request:
+  <div class="preformatted" data-parent="0.27">17:56:42.132 request:
 1 &gt; GET http://localhost:8080/api/candidate/id/1
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
@@ -795,14 +804,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:09:51.136 response time in milliseconds: 7
+17:56:42.142 response time in milliseconds: 0
 1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 &lt; Date: Mon, 07 Apr 2025 22:56:42 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;id&quot;:1,&quot;name&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Perez&quot;,&quot;card&quot;:1000883010,&quot;phone&quot;:3002005060,&quot;city&quot;:&quot;Bogotá&quot;,&quot;email&quot;:&quot;juan.perez@example.com&quot;,&quot;birthdate&quot;:&quot;2004-10-29&quot;,&quot;source&quot;:&quot;LinkedIn&quot;,&quot;skills&quot;:&quot;Java, SQL, Python&quot;,&quot;yearsExperience&quot;:&quot;3 años&quot;,&quot;workExperience&quot;:&quot;Developer&quot;,&quot;seniority&quot;:&quot;Junior&quot;,&quot;salaryAspiration&quot;:&quot;1000000&quot;,&quot;level&quot;:1,&quot;datePresentation&quot;:&quot;2025-03-27&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;}
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Pedro Pablo&quot;,&quot;lastName&quot;:&quot;Duran Duran&quot;,&quot;card&quot;:1000234523,&quot;phone&quot;:6002004050,&quot;city&quot;:&quot;Manizales&quot;,&quot;email&quot;:&quot;pablito@gmail.com&quot;,&quot;birthdate&quot;:&quot;1999-01-02&quot;,&quot;source&quot;:&quot;Computrabajo&quot;,&quot;skills&quot;:&quot;Java, MySQL, C+&quot;,&quot;yearsExperience&quot;:&quot;2&quot;,&quot;workExperience&quot;:&quot;Developer&quot;,&quot;seniority&quot;:&quot;junior&quot;,&quot;salaryAspiration&quot;:&quot;3000000&quot;,&quot;level&quot;:13,&quot;datePresentation&quot;:&quot;2025-03-15&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Sub&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;Dev Front&quot;}
 
 </div>   
 
@@ -851,7 +863,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.id == 1</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -880,7 +892,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>8</span>
+              <span>ms:</span>&nbsp;<span>12</span>
             </div>
           </div>
           <div class="step-row">
@@ -912,7 +924,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">16:09:51.144 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:56:42.147 karate.env system property was: null 
 </div>   
 
   
@@ -960,7 +972,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -969,7 +981,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.33">16:09:51.147 request:
+  <div class="preformatted" data-parent="0.33">17:56:42.147 request:
 1 &gt; GET http://localhost:8080/api/candidate/id/99999
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
@@ -977,11 +989,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:09:51.153 response time in milliseconds: 5
+17:56:42.147 response time in milliseconds: 0
 1 &lt; 404
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Wed, 02 Apr 2025 21:09:51 GMT
+1 &lt; Date: Mon, 07 Apr 2025 22:56:42 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;Message&quot;:&quot;The candidate does not exist&quot;}
@@ -1033,7 +1048,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.Message == &#39;#regex (?i).*candidate does not exist.*&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    

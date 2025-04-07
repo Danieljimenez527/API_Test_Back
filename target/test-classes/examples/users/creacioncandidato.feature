@@ -7,21 +7,21 @@ Feature: creacion de candidatos
     Given request
     """
     {
-      "name": "Daniel Jose",
-      "lastName": "Ortiz Jimenez",
-      "card": 1038234554,
-      "phone": 3212004077,
-      "city": "Bucaramanga",
-      "email": "pablito@gmail.com",
-      "birthdate": "1997-01-01",
+      "name": "Daniel",
+      "lastName": "Sierra Peña",
+      "card": 1112020041,
+      "phone": 3170002232,
+      "city": "Popayan",
+      "email": "maceo@gmail.com",
+      "birthdate": "2015-10-30",
       "source": "Computrabajo",
       "skills": "Java, MySQL, C+",
-      "yearsExperience": "3",
+      "yearsExperience": "5",
       "workExperience": "developer",
-      "seniority": "junior",
-      "salaryAspiration": 3200000,
-      "level": 13,
-      "datePresentation": "2025-03-01",
+      "seniority": "senior",
+      "salaryAspiration": 4000000,
+      "level": 12,
+      "datePresentation": "2025-02-22",
       "origin": 1,
       "jobProfile": 1
     }
@@ -88,4 +88,29 @@ Feature: creacion de candidatos
     Then status 409
     And match response == { "Message": "There is already a id card with that number" }
 
-
+  Scenario: actualizacion de un candidato correctamente
+    Given url 'http://localhost:8080/api/candidate/1'
+    And request
+  """
+  {
+    "name": "Pedro",
+    "lastName": "Pineda Duran",
+    "card": 1000234523,
+    "phone": 6002004050,
+    "city": "Manizales",
+    "email": "pablito@gmail.com",
+    "birthdate": "1999-01-02",
+    "source": "Computrabajo",
+    "skills": "Java, MySQL, C+",
+    "yearsExperience": "2",
+    "workExperience": "Developer",
+    "seniority": "junior",
+    "salaryAspiration": 3000000,
+    "level": 13,
+    "datePresentation": "2025-03-15",
+    "origin": 1,
+    "jobProfile": 1
+  }
+  """
+    When method PUT
+    Then status 200
