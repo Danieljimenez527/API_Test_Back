@@ -7,20 +7,20 @@ Feature: creacion de candidatos
     Given request
     """
     {
-      "name": "Daniel",
-      "lastName": "Sierra Peña",
-      "card": 1112020041,
-      "phone": 3170002232,
-      "city": "Popayan",
-      "email": "maceo@gmail.com",
-      "birthdate": "2015-10-30",
-      "source": "Computrabajo",
+      "name": "Sebastian",
+      "lastName": "Bedoya",
+      "card": 108532777,
+      "phone": 310878888,
+      "city": "Medellin",
+      "email": "tatto@hotmail.com",
+      "birthdate": "2001-08-08",
+      "source": "LinkedIn",
       "skills": "Java, MySQL, C+",
       "yearsExperience": "5",
       "workExperience": "developer",
       "seniority": "senior",
-      "salaryAspiration": 4000000,
-      "level": 12,
+      "salaryAspiration": 1000000,
+      "level": 13,
       "datePresentation": "2025-02-22",
       "origin": 1,
       "jobProfile": 1
@@ -89,25 +89,25 @@ Feature: creacion de candidatos
     And match response == { "Message": "There is already a id card with that number" }
 
   Scenario: actualizacion de un candidato correctamente
-    Given url 'http://localhost:8080/api/candidate/1'
+    Given url 'http://localhost:8080/api/candidate/3'
     And request
   """
   {
-    "name": "Pedro",
-    "lastName": "Pineda Duran",
-    "card": 1000234523,
-    "phone": 6002004050,
-    "city": "Manizales",
-    "email": "pablito@gmail.com",
-    "birthdate": "1999-01-02",
+    "name": "Daniel",
+    "lastName": "Peña Jimenez",
+    "card": 1035863527,
+    "phone": 3193961767,
+    "city": "Copacabana",
+    "email": "Dany2pac@gmail.com",
+    "birthdate": "1992-12-02",
     "source": "Computrabajo",
-    "skills": "Java, MySQL, C+",
+    "skills": "screenplay, java, cucumber, karate, azure",
     "yearsExperience": "2",
-    "workExperience": "Developer",
+    "workExperience": "QC Automation",
     "seniority": "junior",
-    "salaryAspiration": 3000000,
-    "level": 13,
-    "datePresentation": "2025-03-15",
+    "salaryAspiration": 5400000,
+    "level": 11,
+    "datePresentation": "2025-01-22",
     "origin": 1,
     "jobProfile": 1
   }

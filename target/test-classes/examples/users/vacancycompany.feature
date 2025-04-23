@@ -1,7 +1,7 @@
 Feature: Gestión de vacantes por empresa
 
   Background:
-    * url 'http://localhost:8080/api/vacancy_company/'
+    * url 'http://localhost:8080/api/company_vacancy/'
 
   Scenario: API-CP28 - Obtener vacante por ID válido
     Given path '1'
@@ -28,9 +28,9 @@ Feature: Gestión de vacantes por empresa
       "seniority": "Junior",
       "skills": "Cucumber, karate, Postman, Jira",
       "experience": "1 año en QA manual",
-      "assignmentTime": "2025-05-10",
+      "assignmentTime": "2025-04-10",
       "role": 2,
-      "jobProfile": 1,
+      "jobProfile": 3,
       "origin": 1
     }
     """
