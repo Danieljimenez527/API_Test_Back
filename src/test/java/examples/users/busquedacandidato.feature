@@ -33,3 +33,8 @@ Feature: Pruebas de API para la búsqueda de candidatos
     When method get
     Then status 404
     And match response.Message == "The candidate does not exist"
+
+  Scenario: API-CP14 - Busqueda de todos los candidatos en la BD
+    Given path ''
+    When method get
+    Then status 200

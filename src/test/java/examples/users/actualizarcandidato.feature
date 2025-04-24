@@ -8,11 +8,11 @@ Feature: Validar actualización y eliminación de candidatos
     And request
       """
       {
-    "name": "Juan",
-    "lastName": "Pérez",
+    "name": "Jose Jose",
+    "lastName": "Pérez Pineda",
     "card": 1035883010,
     "phone": 3012005060,
-    "city": "Neiva",
+    "city": "Ibague",
     "email": "juan.perez@example.com",
     "birthdate": "2002-10-29",
     "source": "LinkedIn",
@@ -88,7 +88,7 @@ Feature: Validar actualización y eliminación de candidatos
 
 
   Scenario: API-CP12 - Eliminar un candidato correctamente
-    Given path '15'
+    Given path '16'
     When method DELETE
     Then status 204
 
