@@ -1,27 +1,27 @@
 Feature: creacion de candidatos
 
   Background:
-    Given url 'http://localhost:8080/api/candidate/'
+    Given url 'http://localhost:8082/api/candidate/'
 
   Scenario: Registrar un nuevo candidato correctamente
     Given request
     """
     {
-      "name": "Pastor",
-      "lastName": "Lopez",
-      "card": 41853111,
-      "phone": 303870039,
-      "city": "Yolombo",
-      "email": "Aguapachero@hotmail.com",
-      "birthdate": "1985-02-08",
-      "source": "LinkedIn",
-      "skills": "Java, MySQL, C+",
+      "name": "Arnulfo",
+      "lastName": "Valentierra",
+      "card": 318653111,
+      "phone": 325800009,
+      "city": "Armenia",
+      "email": "once@hotmail.com",
+      "birthdate": "1979-02-08",
+      "source": "computrabajo",
+      "skills": "Java, MySQL, swagger",
       "yearsExperience": "4",
-      "workExperience": "developer",
+      "workExperience": "fullstack",
       "seniority": "senior",
-      "salaryAspiration": 1500000,
-      "level": 13,
-      "datePresentation": "2025-02-22",
+      "salaryAspiration": 4500000,
+      "level": 10,
+      "datePresentation": "2025-04-19",
       "origin": 1,
       "jobProfile": 1
     }
@@ -60,10 +60,10 @@ Feature: creacion de candidatos
     Given request
     """
     {
-      "name": "Sara",
+     "name": "Sara",
     "lastName": "Cifuentes",
-    "card": 1000085233,
-    "phone": 3045275455,
+    "card": 1000025059,
+    "phone": 3205270001,
     "city": "Medellin",
     "email": "sharis@gmail.com",
     "birthdate": "1999-12-16",
@@ -81,10 +81,10 @@ Feature: creacion de candidatos
     """
     When method POST
     Then status 409
-    And match response == { "Message": "There is already a id card with that number" }
+    And match response == {"message":"There is already a card with that parameter"}
 
   Scenario: actualizacion de un candidato correctamente
-    Given url 'http://localhost:8080/api/candidate/3'
+    Given url 'http://localhost:8082/api/candidate/4'
     And request
   """
   {

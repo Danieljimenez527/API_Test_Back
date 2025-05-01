@@ -1,7 +1,7 @@
 Feature: Pruebas de API para la búsqueda de candidatos
 
   Background:
-    Given url 'http://localhost:8080/api/candidate/'
+    Given url 'http://localhost:8082/api/candidate/'
 
   Scenario: API-CP01 - Búsqueda por Nombre Completo Válido
     Given path 'search-fullName/Sara Cifuentes'

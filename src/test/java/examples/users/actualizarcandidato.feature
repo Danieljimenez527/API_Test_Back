@@ -1,26 +1,26 @@
 Feature: Validar actualización y eliminación de candidatos
 
   Background:
-    * url 'http://localhost:8080/api/candidate'
+    * url 'http://localhost:8082/api/candidate'
 
   Scenario: API-CP09 - Actualizar datos correctamente de un candidato existente
-    Given path '1'
+    Given path '4'
     And request
       """
       {
-    "name": "Jose Jose",
-    "lastName": "Pérez Pineda",
-    "card": 1035883010,
-    "phone": 3012005060,
-    "city": "Ibague",
-    "email": "juan.perez@example.com",
-    "birthdate": "2002-10-29",
+    "name": "Daniel",
+    "lastName": "Peña Jimenez",
+    "card": 1035863288,
+    "phone": 3193961767,
+    "city": "Bello",
+    "email": "Dany@gmail.com",
+    "birthdate": "1992-12-02",
     "source": "LinkedIn",
-    "skills": "Java, SQL, Python",
+    "skills": "Java, cucumber, karate, Python",
     "yearsExperience": "3 años",
-    "workExperience": "Developer",
+    "workExperience": "3",
     "seniority": "Junior",
-    "salaryAspiration": "1000000",
+    "salaryAspiration": "3000000",
     "level": 11,
     "datePresentation": "2025-04-22",
     "origin": 1,
@@ -56,7 +56,7 @@ Feature: Validar actualización y eliminación de candidatos
    """
     When method PUT
     Then status 404
-    And match response.Message == "There is no entity with that identification"
+    And match response.Message == "There is not entity with that identification"
 
   Scenario: API-CP11 - No se puede actualizar con datos inválidos (fecha incorrecta)
     Given path '1'
@@ -88,7 +88,7 @@ Feature: Validar actualización y eliminación de candidatos
 
 
   Scenario: API-CP12 - Eliminar un candidato correctamente
-    Given path '16'
+    Given path '8'
     When method DELETE
     Then status 204
 
@@ -96,4 +96,4 @@ Feature: Validar actualización y eliminación de candidatos
     Given path '99999'
     When method DELETE
     Then status 404
-    And match response.Message == "There is no entity with that identification"
+    And match response.Message == "There is not entity with that identification"

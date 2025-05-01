@@ -8,7 +8,7 @@ function fn() {
 
   var config = {
     env: env,
-    baseUrl: 'http://localhost:8080/api/candidate/' // Base URL de la API
+    baseUrl: 'http://localhost:8082/api/candidate/' // Base URL de la API
   };
 
   karate.configure('connectTimeout', 5000);

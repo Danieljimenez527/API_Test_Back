@@ -1,15 +1,15 @@
 Feature: Validar la postulacion de un candidato
 
   Background:
-    Given url 'http://localhost:8080/api/postulation/'
+    Given url 'http://localhost:8082/api/postulation/'
 
   Scenario: API-CP15 Postular un candidato a una vacante
     Given request
     """
     {
-  "datePresentation": "2025-03-01",
-  "roleId": 2,
-  "candidateId": 1,
+  "datePresentation": "2025-02-01",
+  "roleId": 3,
+  "candidateId": 10,
   "status": true
 }
     """
@@ -22,7 +22,7 @@ Feature: Validar la postulacion de un candidato
     {
   "datePresentation": "2025-03-01",
   "roleId": 4,
-  "candidateId": 2,
+  "candidateId": 1,
   "status": true
 }
     """

@@ -1,7 +1,7 @@
 Feature: Gestión de vacantes por empresa
 
   Background:
-    * url 'http://localhost:8080/api/company_vacancy/'
+    * url 'http://localhost:8082/api/role/'
 
   Scenario: API-CP28 - Obtener vacante por ID válido
     Given path '1'
@@ -21,16 +21,16 @@ Feature: Gestión de vacantes por empresa
     Given request
     """
     {
-      "description": "Vacante para QA manual",
-      "contract": "Por hora",
-      "salary": 4000000,
-      "level": 12,
+      "nameRole": "electricista",
+      "description": "electrico",
+      "contract": "indefinido",
+      "salary": 3900000,
+      "level": 11,
       "seniority": "Junior",
-      "skills": "Cucumber, karate, Postman, Jira",
-      "experience": "1 año en QA manual",
-      "assignmentTime": "2025-04-10",
-      "role": 2,
-      "jobProfile": 3,
+      "skills": "Cucumber, karate, Postman, Azure",
+      "experience": "1 año en EPM",
+      "assignmentTime": "2025-02-10",
+      "jobProfile": 2,
       "origin": 1
     }
     """
@@ -53,17 +53,17 @@ Feature: Gestión de vacantes por empresa
     Given request
     """
     {
-    "description": "Vacante para QA Automatizador",
+      "nameRole": "QA manual",
+      "description": "Vacante para barrer",
       "contract": "indefinido",
-      "salary": 4000000,
+      "salary": 3500000,
       "level": 9,
-      "seniority": "senior",
-      "skills": "Cucumber, karate, Postman, Jira",
-      "experience": "2 año en QA manual",
+      "seniority": "junior",
+      "skills": "trapear",
+      "experience": "0",
       "assignmentTime": "2025-04-10",
-      "role": 3,
-      "jobProfile": 3,
-      "origin": 1
+      "jobProfile": 1,
+      "origin": 2
     }
     """
     When method PUT
@@ -74,48 +74,46 @@ Feature: Gestión de vacantes por empresa
     Given request
     """
     {
+     "nameRole": "QC999999",
       "description": "Vacante para QA manual",
-      "contract": "Por hora",
+      "contract": "indefinido",
       "salary": 4000000,
       "level": 12,
       "seniority": "Junior",
       "skills": "Cucumber, karate, Postman, Jira",
       "experience": "1 año en QA manual",
       "assignmentTime": "2025-04-10",
-      "role": 2,
       "jobProfile": 3,
       "origin": 1
     }
     """
     When method PUT
     Then status 404
-    And match response.Message == "There is no entity with that identification"
+    And match response.Message == "There is not entity with that identification"
 
   Scenario: API-CP35 - Actualizar una vacante con datos incorrectos
-    Given path '7'
+    Given path '3'
     Given request
     """
     {
-    "id": 7,
-    "description": "Vacante para QA manual",
-    "contract": "Por hora",
-    "salary": "4000000",
-    "level": 12,
-    "seniority": "Junior",
-    "skills": "Cucumber, karate, Postman, Jira",
-    "experience": "1 año en QA manual",
-    "assignmentTime": "2025-50-10",
-    "jobProfileId": 3,
-    "jobProfileName": "Automatizador",
-    "originId": 1,
-    "originName": "Sub"
+    "nameRole": "string",
+  "description": "string",
+  "contract": "string",
+  "salary": 1000000,
+  "level": 18,
+  "seniority": "string",
+  "skills": "string",
+  "experience": "string",
+  "assignmentTime": "2025-40-40",
+  "jobProfile": 1,
+  "origin": 1
   }
     """
     When method PUT
     Then status 400
 
   Scenario: API-CP36 - Eliminar una vacante existente
-    Given path '10'
+    Given path '8'
     When method DELETE
     Then status 204
 
@@ -123,4 +121,4 @@ Feature: Gestión de vacantes por empresa
     Given path '888'
     When method DELETE
     Then status 404
-    And match response.Message == "There is no entity with that identification"
+    And match response.Message == "There is not entity with that identification"
