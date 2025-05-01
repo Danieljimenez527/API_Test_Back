@@ -10,7 +10,7 @@ Feature: Validar actualización y eliminación de candidatos
       {
     "name": "Daniel",
     "lastName": "Peña Jimenez",
-    "card": 1035863288,
+    "card": 1035862727,
     "phone": 3193961767,
     "city": "Bello",
     "email": "Dany@gmail.com",
@@ -63,7 +63,7 @@ Feature: Validar actualización y eliminación de candidatos
     And request
       """
       {
-        "id": 1,
+    "id": 1,
     "name": "Juan",
     "lastName": "Pérez",
     "card": 1035883010,
@@ -88,7 +88,7 @@ Feature: Validar actualización y eliminación de candidatos
 
 
   Scenario: API-CP12 - Eliminar un candidato correctamente
-    Given path '8'
+    Given path '10'
     When method DELETE
     Then status 204
 

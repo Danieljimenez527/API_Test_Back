@@ -3,25 +3,25 @@ Feature: creacion de candidatos
   Background:
     Given url 'http://localhost:8082/api/candidate/'
 
-  Scenario: Registrar un nuevo candidato correctamente
+  Scenario: CP06 Registrar un nuevo candidato correctamente
     Given request
     """
     {
-      "name": "Arnulfo",
-      "lastName": "Valentierra",
-      "card": 318653111,
-      "phone": 325800009,
-      "city": "Armenia",
-      "email": "once@hotmail.com",
-      "birthdate": "1979-02-08",
-      "source": "computrabajo",
-      "skills": "Java, MySQL, swagger",
-      "yearsExperience": "4",
-      "workExperience": "fullstack",
-      "seniority": "senior",
-      "salaryAspiration": 4500000,
-      "level": 10,
-      "datePresentation": "2025-04-19",
+      "name": "Romulo",
+      "lastName": "Caicedo",
+      "card": 43357855,
+      "phone": 3198005555,
+      "city": "Sonson",
+      "email": "cerrolargo@hotmail.com",
+      "birthdate": "1980-03-08",
+      "source": "linkedin",
+      "skills": " MySQL, swagger",
+      "yearsExperience": "2",
+      "workExperience": "desarrollador",
+      "seniority": "junior",
+      "salaryAspiration": 2900000,
+      "level": 12,
+      "datePresentation": "2025-03-17",
       "origin": 1,
       "jobProfile": 1
     }
@@ -29,7 +29,7 @@ Feature: creacion de candidatos
     When method POST
     Then status 201
 
-  Scenario: No permitir crear un candidato con datos incompletos
+  Scenario: CP07 No permitir crear un candidato con datos incompletos
     Given request
     """
     {
@@ -56,7 +56,7 @@ Feature: creacion de candidatos
     Then status 400
     And match response == { "card": "card cannot be null" }
 
-  Scenario: No permitir la creación de un candidato duplicado
+  Scenario: CP08 No permitir la creación de un candidato duplicado
     Given request
     """
     {
@@ -82,30 +82,3 @@ Feature: creacion de candidatos
     When method POST
     Then status 409
     And match response == {"message":"There is already a card with that parameter"}
-
-  Scenario: actualizacion de un candidato correctamente
-    Given url 'http://localhost:8082/api/candidate/4'
-    And request
-  """
-  {
-    "name": "Daniel",
-    "lastName": "Peña Jimenez",
-    "card": 1037873787,
-    "phone": 3193961767,
-    "city": "Copacabana",
-    "email": "Dany2pac@gmail.com",
-    "birthdate": "1992-12-02",
-    "source": "Computrabajo",
-    "skills": "screenplay, java, cucumber, karate, azure",
-    "yearsExperience": "4",
-    "workExperience": "QC Automation",
-    "seniority": "junior",
-    "salaryAspiration": 5400000,
-    "level": 10,
-    "datePresentation": "2025-01-22",
-    "origin": 1,
-    "jobProfile": 1
-  }
-  """
-    When method PUT
-    Then status 200

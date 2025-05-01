@@ -21,17 +21,17 @@ Feature: Gestión de vacantes por empresa
     Given request
     """
     {
-      "nameRole": "electricista",
-      "description": "electrico",
-      "contract": "indefinido",
-      "salary": 3900000,
-      "level": 11,
+      "nameRole": "vendedor de vive100",
+      "description": "pararse en un semaforo",
+      "contract": "por horas",
+      "salary": 1200000,
+      "level": 12,
       "seniority": "Junior",
-      "skills": "Cucumber, karate, Postman, Azure",
-      "experience": "1 año en EPM",
-      "assignmentTime": "2025-02-10",
+      "skills": "Postman, Azure",
+      "experience": "1 año",
+      "assignmentTime": "2025-03-10",
       "jobProfile": 2,
-      "origin": 1
+      "origin": 2
     }
     """
     When method post
@@ -113,7 +113,7 @@ Feature: Gestión de vacantes por empresa
     Then status 400
 
   Scenario: API-CP36 - Eliminar una vacante existente
-    Given path '8'
+    Given path '10'
     When method DELETE
     Then status 204
 

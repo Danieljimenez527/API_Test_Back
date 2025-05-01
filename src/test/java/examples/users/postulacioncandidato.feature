@@ -8,8 +8,8 @@ Feature: Validar la postulacion de un candidato
     """
     {
   "datePresentation": "2025-02-01",
-  "roleId": 3,
-  "candidateId": 10,
+  "roleId": 4,
+  "candidateId": 12,
   "status": true
 }
     """
@@ -42,3 +42,9 @@ Feature: Validar la postulacion de un candidato
     """
     When method POST
     Then status 400
+
+    Scenario: API-CP21 mensaje adecuado de candidato sin postulacion
+      Given path '999'
+      When method get
+      Then status 404
+      And match response.Message == "There is not entity with that identification"

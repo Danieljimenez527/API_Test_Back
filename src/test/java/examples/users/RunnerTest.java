@@ -7,7 +7,7 @@ class RunnerTest {
     @Karate.Test
     Karate testUsers() {
         return Karate.run("busquedacandidato", "creacioncandidato",
-                "role.feature", "actualizarcandidato.feature",
+                "role.feature", "actualizarcandidato.feature", "candidatestate.feature", "procesos.feature",
                 "postulacioncandidato.feature").relativeTo(getClass());
     }
 
