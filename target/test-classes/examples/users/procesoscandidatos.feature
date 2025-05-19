@@ -4,7 +4,7 @@ Feature: casos de pruebas de la tabla procesos
     * url 'http://localhost:8082/api/process/'
 
     Scenario: CP16 verificar el proceso activo de un candidato
-      Given path 'candidate/1'
+      Given path '4'
       When method get
       Then status 200
 
@@ -15,7 +15,8 @@ Feature: casos de pruebas de la tabla procesos
         {
         "postulationId": 1,
         "description": "proceso completado",
-        "assignedDate": "2025-01-01"
+        "assignedDate": "2025-04-01",
+        "status": "ACTIVE"
         }
         """
         When method PUT
@@ -26,9 +27,10 @@ Feature: casos de pruebas de la tabla procesos
           Given request
           """
         {
-        "postulationId": 1,
+        "postulationId": 4,
         "description": "proceso completado",
-        "assignedDate": "2025-01-01"
+        "assignedDate": "2025-05-01",
+        "status": "ACTIVE"
         }
         """
           When method PUT

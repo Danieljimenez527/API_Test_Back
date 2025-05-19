@@ -1,0 +1,709 @@
+17:30:27.803 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:30:30.365 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:30.878 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/candidate/search-fullName/Daniel%20Jimenez
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:30.938 [main] DEBUG com.intuit.karate - response time in milliseconds: 56
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:30 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Daniel","lastName":"Peña Jimenez","card":"1035863287","phone":"3193961767","city":"Copacabana","email":"Dany@gmail.com","birthdate":"1993-12-02","source":"LinkedIn","skills":"Java, cucumber, karate, Python","yearsExperience":"2 años","workExperience":"2 años en zynoa","seniority":"Junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+17:30:31.002 [main] INFO  com.intuit.karate - [print] Respuesta de la API: {
+  "candidates": [
+    {
+      "id": 2,
+      "name": "Daniel",
+      "lastName": "Peña Jimenez",
+      "card": "1035863287",
+      "phone": "3193961767",
+      "city": "Copacabana",
+      "email": "Dany@gmail.com",
+      "birthdate": "1993-12-02",
+      "source": "LinkedIn",
+      "skills": "Java, cucumber, karate, Python",
+      "yearsExperience": "2 años",
+      "workExperience": "2 años en zynoa",
+      "seniority": "Junior",
+      "salaryAspiration": "3000000",
+      "level": 13,
+      "datePresentation": "2025-04-01",
+      "hasResume": false,
+      "resumeFileName": null,
+      "status": "ACTIVE",
+      "originId": 1,
+      "originName": "Reclutador",
+      "jobProfileId": 1,
+      "jobProfileName": "QC automation"
+    }
+  ],
+  "currentPage": 0,
+  "pageSize": 1,
+  "totalPages": 1,
+  "totalElements": 1
+}
+ 
+17:30:31.087 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:31.098 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/candidate/search-fullName/Da
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:31.113 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"candidates":[{"id":2,"name":"Daniel","lastName":"Peña Jimenez","card":"1035863287","phone":"3193961767","city":"Copacabana","email":"Dany@gmail.com","birthdate":"1993-12-02","source":"LinkedIn","skills":"Java, cucumber, karate, Python","yearsExperience":"2 años","workExperience":"2 años en zynoa","seniority":"Junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"}],"currentPage":0,"pageSize":1,"totalPages":1,"totalElements":1}
+
+17:30:31.149 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:31.160 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/candidate/search-fullName/Mar%C3%ADa%20Garc%C3%ADa
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:31.173 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+17:30:31.204 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:31.213 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/candidate/id/3
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:31.229 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":3,"name":"sofia","lastName":"Vergara","card":"45667724","phone":"3193951767","city":"Sonson","email":"unaula@gmail.com","birthdate":"1993-12-02","source":"string","skills":"string","yearsExperience":"2","workExperience":"1 año en zynoa","seniority":"junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"}
+
+17:30:31.250 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:31.258 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/candidate/id/99999
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:31.271 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+17:30:31.298 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:31.308 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/candidate/
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:31.333 [main] DEBUG com.intuit.karate - response time in milliseconds: 23
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":2,"name":"Daniel","lastName":"Peña Jimenez","card":"1035863287","phone":"3193961767","city":"Copacabana","email":"Dany@gmail.com","birthdate":"1993-12-02","source":"LinkedIn","skills":"Java, cucumber, karate, Python","yearsExperience":"2 años","workExperience":"2 años en zynoa","seniority":"Junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"},{"id":3,"name":"sofia","lastName":"Vergara","card":"45667724","phone":"3193951767","city":"Sonson","email":"unaula@gmail.com","birthdate":"1993-12-02","source":"string","skills":"string","yearsExperience":"2","workExperience":"1 año en zynoa","seniority":"junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"},{"id":4,"name":"francisco","lastName":"Arrue","card":"85667724","phone":"3152951767","city":"mocoa","email":"tronco@gmail.com","birthdate":"1993-12-02","source":"string","skills":"string","yearsExperience":"2","workExperience":"1 año en EPM","seniority":"junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-05-02","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"},{"id":5,"name":"Austin","lastName":"Santos","card":"357855","phone":"3000005555","city":"San juan","email":"arcangel@hotmail.com","birthdate":"1982-07-07","source":"linkedin","skills":" MySQL worbench, postman, swagger","yearsExperience":"3","workExperience":"3 años","seniority":"junior","salaryAspiration":"3100000","level":12,"datePresentation":"2025-03-17","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"}]
+
+17:30:32.977 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.094 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 393
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Austin","lastName":"Santos","card":357855,"phone":3000005555,"city":"San juan","email":"arcangel@hotmail.com","birthdate":"1982-07-07","source":"linkedin","skills":" MySQL worbench, postman, swagger","yearsExperience":"3","workExperience":"3 años","seniority":"junior","salaryAspiration":3100000,"level":12,"datePresentation":"2025-03-17","status":"ACTIVE","origin":1,"jobProfile":1}
+
+17:30:33.112 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"There is already a card with that parameter"}
+
+17:30:33.137 [main] ERROR com.intuit.karate - classpath:examples/users/creacioncandidato.feature:31
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 17, url: http://localhost:8082/api/candidate/, response: 
+{"message":"There is already a card with that parameter"}
+classpath:examples/users/creacioncandidato.feature:31
+17:30:33.190 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.195 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 377
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Andres","lastName":"Parra","card":null,"phone":3002004050,"city":"Quibdo","email":"pablito@gmail.com","birthdate":"1999-12-12","source":"Computrabajo","skills":"Angular, AWS, MySQL","yearsExperience":"2","workExperience":"developer","seniority":"junior","salaryAspiration":3500000,"level":13,"datePresentation":"2025-03-01","status":"ACTIVE","origin":1,"jobProfile":1}
+
+17:30:33.205 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Connection: close
+{"card":"card cannot be null"}
+
+17:30:33.220 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.224 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/candidate/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 394
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Daniel","lastName":"Jimenez","card":1035863287,"phone":3193961767,"city":"Copacabana","email":"nacional@gmail.com","birthdate":"1993-12-02","source":"string","skills":"string","yearsExperience":"2","workExperience":"1 año en zynoa software house","seniority":"senior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","status":"ACTIVE","origin":1,"jobProfile":1}
+
+17:30:33.244 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"There is already a card with that parameter"}
+
+17:30:33.493 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.503 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/role/1
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:33.520 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":1,"nameRole":"QC Automation","description":"role para automatizacion con karate","contract":"string","salary":"3000000","level":13,"seniority":"junior","skills":"string","experience":"string","assignmentTime":"2025-03-28","status":"INACTIVE","jobProfileId":1,"jobProfileName":"QC automation","originId":1,"originName":"Reclutador"}
+
+17:30:33.537 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.546 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/role/99999
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:33.559 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:33.574 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.580 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/role/
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:33.604 [main] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":3,"nameRole":"12345Dev fullstack","description":"vacante para puesto de dev","contract":"indefinido","salary":"3000000","level":13,"seniority":"junior","skills":"angular, spring boot","experience":"1 año en tata","assignmentTime":"2026-05-01","status":"ACTIVE","jobProfileId":1,"jobProfileName":"QC automation","originId":1,"originName":"Reclutador"},{"id":4,"nameRole":"abogado","description":"especialista derecho de familia","contract":"indefinido","salary":"4230000","level":10,"seniority":"Senior","skills":"Postman, Jira, screenplay","experience":"3 años","assignmentTime":"2027-05-19","status":"ACTIVE","jobProfileId":2,"jobProfileName":"dev fullstack","originId":2,"originName":"Admin"}]
+
+17:30:33.624 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.632 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/role/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 276
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nameRole":"abogado","description":"especialista derecho de familia","contract":"indefinido","salary":4200000,"level":9,"seniority":"Senior","skills":"Postman, Jira, screenplay","experience":"3 años","assignmentTime":"2026-05-19","status":"ACTIVE","jobProfile":2,"origin":2}
+
+17:30:33.647 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"There is already a abogado with that parameter"}
+
+17:30:33.650 [main] ERROR com.intuit.karate - classpath:examples/users/role.feature:39
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 14, url: http://localhost:8082/api/role/, response: 
+{"message":"There is already a abogado with that parameter"}
+classpath:examples/users/role.feature:39
+17:30:33.669 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.676 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/role/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"description":"Vacante incompleta","salary":2800000}
+
+17:30:33.687 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Connection: close
+{"skills":"Skills cannot be blank","jobProfile":"jobProfile cannot be null","assignmentTime":"Assignment cannot be null","level":"Level scale cannot be null","nameRole":"Role cannot be blank","contract":"Contract type cannot be blank","origin":"origin cannot be null","experience":"Years experience scale cannot be null","seniority":"Seniority cannot be blank","status":"Status cannot be null"}
+
+17:30:33.702 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.709 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/role/4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 277
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nameRole":"abogado","description":"especialista derecho de familia","contract":"indefinido","salary":4230000,"level":10,"seniority":"Senior","skills":"Postman, Jira, screenplay","experience":"3 años","assignmentTime":"2027-05-19","status":"ACTIVE","jobProfile":2,"origin":2}
+
+17:30:33.748 [main] DEBUG com.intuit.karate - response time in milliseconds: 37
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":4,"nameRole":"abogado","description":"especialista derecho de familia","contract":"indefinido","salary":"4230000","level":10,"seniority":"Senior","skills":"Postman, Jira, screenplay","experience":"3 años","assignmentTime":"2027-05-19","status":"ACTIVE","jobProfileId":2,"jobProfileName":"dev fullstack","originId":2,"originName":"Admin"}
+
+17:30:33.765 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.776 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/role/999
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 287
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nameRole":"QC999999","description":"Vacante para QA manual","contract":"indefinido","salary":4000000,"level":12,"seniority":"Junior","skills":"Cucumber, karate, Postman, Jira","experience":"1 año en QA manual","assignmentTime":"2025-04-10","status":"ACTIVE","jobProfile":2,"origin":1}
+
+17:30:33.794 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:33.813 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.820 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/role/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 229
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nameRole":"string","description":"string","contract":"string","salary":1000000,"level":18,"seniority":"string","skills":"string","experience":"string","assignmentTime":"2026\/50\/31","status":"ACTIVE","jobProfile":1,"origin":1}
+
+17:30:33.830 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 400
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 61
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Connection: close
+The value entered for the field 'assignmentTime' is not valid
+
+17:30:33.846 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.853 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8082/api/role/2
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:33.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 204
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+17:30:33.884 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:33.888 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8082/api/role/888
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:33.901 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:34.333 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.338 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/candidate/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 414
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Daniel","lastName":"Peña Jimenez","card":1035863287,"phone":3193961767,"city":"Copacabana","email":"Dany@gmail.com","birthdate":"1993-12-02","source":"LinkedIn","skills":"Java, cucumber, karate, Python","yearsExperience":"2 años","workExperience":"2 años en zynoa","seniority":"Junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","status":"ACTIVE","origin":1,"jobProfile":1}
+
+17:30:34.395 [main] DEBUG com.intuit.karate - response time in milliseconds: 57
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":2,"name":"Daniel","lastName":"Peña Jimenez","card":"1035863287","phone":"3193961767","city":"Copacabana","email":"Dany@gmail.com","birthdate":"1993-12-02","source":"LinkedIn","skills":"Java, cucumber, karate, Python","yearsExperience":"2 años","workExperience":"2 años en zynoa","seniority":"Junior","salaryAspiration":"3000000","level":13,"datePresentation":"2025-04-01","hasResume":false,"resumeFileName":null,"status":"ACTIVE","originId":1,"originName":"Reclutador","jobProfileId":1,"jobProfileName":"QC automation"}
+
+17:30:34.412 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.419 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/candidate/99999
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 390
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"pepito","lastName":"Pérez","card":1035883019,"phone":3012005069,"city":"Neiva","email":"juan.perez@example.com","birthdate":"2002-10-29","source":"LinkedIn","skills":"Java, SQL, Python","yearsExperience":"3 años","workExperience":"Developer","seniority":"Junior","salaryAspiration":"2000000","level":11,"datePresentation":"2025-04-22","status":"ACTIVE","origin":1,"jobProfile":1}
+
+17:30:34.436 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:34.450 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.459 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/candidate/3
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 372
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Sofia","lastName":"Vergara","card":45667724,"phone":3193951767,"city":"Sonson","email":"unaula@gmail.com","birthdate":"1993-12-02","source":"string","skills":"string","yearsExperience":"2","workExperience":"1 año en zynoa","seniority":"Junior","salaryAspiration":"DOS LUCAS","level":13,"datePresentation":"2025-50-22","status":"ACTIVE","origin":1,"jobProfile":1}
+
+17:30:34.466 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 400
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 63
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Connection: close
+The value entered for the field 'salaryAspiration' is not valid
+
+17:30:34.478 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.484 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8082/api/candidate/1
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:34.499 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:34.501 [main] ERROR com.intuit.karate - classpath:examples/users/actualizarcandidato.feature:95
+Then status 204
+status code was: 404, expected: 204, response time in milliseconds: 14, url: http://localhost:8082/api/candidate/1, response: 
+{"Message":"There is not entity with that identification"}
+classpath:examples/users/actualizarcandidato.feature:95
+17:30:34.518 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.524 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8082/api/candidate/99999
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:34.538 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:34.714 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.732 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/candidate_state/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"stateId":5,"description":"Termino prueba","status":true,"assignedDate":"2025-01-01"}
+
+17:30:34.738 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Connection: close
+{"assignedDate":"The date must be within the last 3 months and cannot be in the future.","statusHistory":"Status cannot be null"}
+
+17:30:34.740 [main] ERROR com.intuit.karate - classpath:examples/users/candidatestate.feature:18
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 6, url: http://localhost:8082/api/candidate_state/1, response: 
+{"assignedDate":"The date must be within the last 3 months and cannot be in the future.","statusHistory":"Status cannot be null"}
+classpath:examples/users/candidatestate.feature:18
+17:30:34.750 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.754 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/candidate_state/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 92
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"stateId":2,"description":"candidato rechazado","status":false,"assignedDate":"2025-01-01"}
+
+17:30:34.763 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Connection: close
+{"assignedDate":"The date must be within the last 3 months and cannot be in the future.","statusHistory":"Status cannot be null"}
+
+17:30:34.765 [main] ERROR com.intuit.karate - classpath:examples/users/candidatestate.feature:31
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 9, url: http://localhost:8082/api/candidate_state/1, response: 
+{"assignedDate":"The date must be within the last 3 months and cannot be in the future.","statusHistory":"Status cannot be null"}
+classpath:examples/users/candidatestate.feature:31
+17:30:34.856 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.861 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/process/4
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:34.880 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":4,"postulationId":1,"postulationName":"Daniel","description":"un año de contrato","assignmentDate":"2026-05-19","status":"ACTIVE","candidateState":[]}
+
+17:30:34.889 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.893 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/process/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"postulationId":1,"description":"proceso completado","assignedDate":"2025-04-01","status":"ACTIVE"}
+
+17:30:34.909 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:34.911 [main] ERROR com.intuit.karate - classpath:examples/users/procesoscandidatos.feature:23
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 14, url: http://localhost:8082/api/process/1, response: 
+{"Message":"There is not entity with that identification"}
+classpath:examples/users/procesoscandidatos.feature:23
+17:30:34.924 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.929 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8082/api/process/999
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"postulationId":4,"description":"proceso completado","assignedDate":"2025-05-01","status":"ACTIVE"}
+
+17:30:34.941 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+
+17:30:34.949 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:34.953 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/process/5
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:34.963 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:34 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"The candidate does not exist"}
+
+17:30:35.060 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:35.065 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/postulation/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 78
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"datePresentation":"2025-05-01","status":"ACTIVE","roleId":3,"candidateId":2}
+
+17:30:35.089 [main] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"You have already submitted an active application"}
+
+17:30:35.090 [main] ERROR com.intuit.karate - classpath:examples/users/postulacioncandidato.feature:17
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 24, url: http://localhost:8082/api/postulation/, response: 
+{"Message":"You have already submitted an active application"}
+classpath:examples/users/postulacioncandidato.feature:17
+17:30:35.097 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:35.100 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/postulation/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 78
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"datePresentation":"2025-03-01","status":"ACTIVE","roleId":3,"candidateId":2}
+
+17:30:35.128 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 409
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"You have already submitted an active application"}
+
+17:30:35.144 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:35.149 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8082/api/postulation/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 78
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"datePresentation":"2025-50-01","status":"ACTIVE","roleId":4,"candidateId":4}
+
+17:30:35.158 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 400
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 63
+1 < Date: Mon, 19 May 2025 22:30:35 GMT
+1 < Connection: close
+The value entered for the field 'datePresentation' is not valid
+
+17:30:35.166 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:35.172 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8082/api/postulation/999
+1 > Host: localhost:8082
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:35.186 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 404
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 19 May 2025 22:30:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"Message":"There is not entity with that identification"}
+

@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2a8a0afd-ea55-4cf8-a57b-ce90df814a47",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.users.role</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">9</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-05-19 05:30:33 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>API-CP28 - Obtener vacante por ID válido</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>API-CP29 - Obtener vacante por ID inexistente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:16]"><span>[3:16]</span> <span>API-CP30 - Obtener todas las vacantes</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:20]"><span>[4:20]</span> <span>API-CP31 - Crear una nueva vacante correctamente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:41]"><span>[5:41]</span> <span>API-CP32 - No permitir creación de vacante con datos incompletos</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:52]"><span>[6:52]</span> <span>API-CP33 - Actualizar los datos de una vacante existente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:74]"><span>[7:74]</span> <span>API-CP34 - Actualizar una vacante inexistente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:97]"><span>[8:97]</span> <span>API-CP35 - Actualizar una vacante con datos incorrectos</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:119]"><span>[9:119]</span> <span>API-CP36 - Eliminar una vacante existente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:124]"><span>[10:124]</span> <span>API-CP37 - Eliminacion de vacante inexistente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/role.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Gestión de vacantes por empresa</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">API-CP28 - Obtener vacante por ID válido</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>27</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.494 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">17:30:33.503 request:
+1 &gt; GET http://localhost:8082/api/role/1
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:30:33.521 response time in milliseconds: 16
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:1,&quot;nameRole&quot;:&quot;QC Automation&quot;,&quot;description&quot;:&quot;role para automatizacion con karate&quot;,&quot;contract&quot;:&quot;string&quot;,&quot;salary&quot;:&quot;3000000&quot;,&quot;level&quot;:13,&quot;seniority&quot;:&quot;junior&quot;,&quot;skills&quot;:&quot;string&quot;,&quot;experience&quot;:&quot;string&quot;,&quot;assignmentTime&quot;:&quot;2025-03-28&quot;,&quot;status&quot;:&quot;INACTIVE&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;QC automation&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Reclutador&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">API-CP29 - Obtener vacante por ID inexistente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>19</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.538 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;99999&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:30:33.546 request:
+1 &gt; GET http://localhost:8082/api/role/99999
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:30:33.559 response time in milliseconds: 13
+1 &lt; 404
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;Message&quot;:&quot;There is not entity with that identification&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:16]</span>
+                <span class="scenario-name">API-CP30 - Obtener todas las vacantes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>30</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.575 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">17:30:33.580 request:
+1 &gt; GET http://localhost:8082/api/role/
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:30:33.605 response time in milliseconds: 24
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;id&quot;:3,&quot;nameRole&quot;:&quot;12345Dev fullstack&quot;,&quot;description&quot;:&quot;vacante para puesto de dev&quot;,&quot;contract&quot;:&quot;indefinido&quot;,&quot;salary&quot;:&quot;3000000&quot;,&quot;level&quot;:13,&quot;seniority&quot;:&quot;junior&quot;,&quot;skills&quot;:&quot;angular, spring boot&quot;,&quot;experience&quot;:&quot;1 año en tata&quot;,&quot;assignmentTime&quot;:&quot;2026-05-01&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;jobProfileId&quot;:1,&quot;jobProfileName&quot;:&quot;QC automation&quot;,&quot;originId&quot;:1,&quot;originName&quot;:&quot;Reclutador&quot;},{&quot;id&quot;:4,&quot;nameRole&quot;:&quot;abogado&quot;,&quot;description&quot;:&quot;especialista derecho de familia&quot;,&quot;contract&quot;:&quot;indefinido&quot;,&quot;salary&quot;:&quot;4230000&quot;,&quot;level&quot;:10,&quot;seniority&quot;:&quot;Senior&quot;,&quot;skills&quot;:&quot;Postman, Jira, screenplay&quot;,&quot;experience&quot;:&quot;3 años&quot;,&quot;assignmentTime&quot;:&quot;2027-05-19&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;jobProfileId&quot;:2,&quot;jobProfileName&quot;:&quot;dev fullstack&quot;,&quot;originId&quot;:2,&quot;originName&quot;:&quot;Admin&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:20]</span>
+                <span class="scenario-name">API-CP31 - Crear una nueva vacante correctamente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>21</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.625 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.21">{
+  &quot;nameRole&quot;: &quot;abogado&quot;,
+  &quot;description&quot;: &quot;especialista derecho de familia&quot;,
+  &quot;contract&quot;: &quot;indefinido&quot;,
+  &quot;salary&quot;: 4200000,
+  &quot;level&quot;: 09,
+  &quot;seniority&quot;: &quot;Senior&quot;,
+  &quot;skills&quot;: &quot;Postman, Jira, screenplay&quot;,
+  &quot;experience&quot;: &quot;3 años&quot;,
+  &quot;assignmentTime&quot;: &quot;2026-05-19&quot;,
+  &quot;status&quot;: &quot;ACTIVE&quot;,
+  &quot;jobProfile&quot;: 2,
+  &quot;origin&quot;: 2
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">17:30:33.632 request:
+1 &gt; POST http://localhost:8082/api/role/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 276
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nameRole&quot;:&quot;abogado&quot;,&quot;description&quot;:&quot;especialista derecho de familia&quot;,&quot;contract&quot;:&quot;indefinido&quot;,&quot;salary&quot;:4200000,&quot;level&quot;:9,&quot;seniority&quot;:&quot;Senior&quot;,&quot;skills&quot;:&quot;Postman, Jira, screenplay&quot;,&quot;experience&quot;:&quot;3 años&quot;,&quot;assignmentTime&quot;:&quot;2026-05-19&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;jobProfile&quot;:2,&quot;origin&quot;:2}
+
+17:30:33.647 response time in milliseconds: 14
+1 &lt; 409
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;message&quot;:&quot;There is already a abogado with that parameter&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref failed">39</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">17:30:33.650 classpath:examples/users/role.feature:39
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 14, url: http://localhost:8082/api/role/, response: 
+{&quot;message&quot;:&quot;There is already a abogado with that parameter&quot;}
+classpath:examples/users/role.feature:39
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:41]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:41]</span>
+                <span class="scenario-name">API-CP32 - No permitir creación de vacante con datos incompletos</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:41]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.670 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.42">{
+  &quot;description&quot;: &quot;Vacante incompleta&quot;,
+  &quot;salary&quot;: 2800000
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">17:30:33.677 request:
+1 &gt; POST http://localhost:8082/api/role/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 53
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;description&quot;:&quot;Vacante incompleta&quot;,&quot;salary&quot;:2800000}
+
+17:30:33.688 response time in milliseconds: 10
+1 &lt; 400
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Connection: close
+{&quot;skills&quot;:&quot;Skills cannot be blank&quot;,&quot;jobProfile&quot;:&quot;jobProfile cannot be null&quot;,&quot;assignmentTime&quot;:&quot;Assignment cannot be null&quot;,&quot;level&quot;:&quot;Level scale cannot be null&quot;,&quot;nameRole&quot;:&quot;Role cannot be blank&quot;,&quot;contract&quot;:&quot;Contract type cannot be blank&quot;,&quot;origin&quot;:&quot;origin cannot be null&quot;,&quot;experience&quot;:&quot;Years experience scale cannot be null&quot;,&quot;seniority&quot;:&quot;Seniority cannot be blank&quot;,&quot;status&quot;:&quot;Status cannot be null&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:52]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:52]</span>
+                <span class="scenario-name">API-CP33 - Actualizar los datos de una vacante existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>45</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:52]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.703 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;4&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.54">{
+   &quot;nameRole&quot;: &quot;abogado&quot;,
+  &quot;description&quot;: &quot;especialista derecho de familia&quot;,
+  &quot;contract&quot;: &quot;indefinido&quot;,
+  &quot;salary&quot;: 4230000,
+  &quot;level&quot;: 10,
+  &quot;seniority&quot;: &quot;Senior&quot;,
+  &quot;skills&quot;: &quot;Postman, Jira, screenplay&quot;,
+  &quot;experience&quot;: &quot;3 años&quot;,
+  &quot;assignmentTime&quot;: &quot;2027-05-19&quot;,
+  &quot;status&quot;: &quot;ACTIVE&quot;,
+  &quot;jobProfile&quot;: 2,
+  &quot;origin&quot;: 2
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.71">17:30:33.710 request:
+1 &gt; PUT http://localhost:8082/api/role/4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 277
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nameRole&quot;:&quot;abogado&quot;,&quot;description&quot;:&quot;especialista derecho de familia&quot;,&quot;contract&quot;:&quot;indefinido&quot;,&quot;salary&quot;:4230000,&quot;level&quot;:10,&quot;seniority&quot;:&quot;Senior&quot;,&quot;skills&quot;:&quot;Postman, Jira, screenplay&quot;,&quot;experience&quot;:&quot;3 años&quot;,&quot;assignmentTime&quot;:&quot;2027-05-19&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;jobProfile&quot;:2,&quot;origin&quot;:2}
+
+17:30:33.748 response time in milliseconds: 37
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:4,&quot;nameRole&quot;:&quot;abogado&quot;,&quot;description&quot;:&quot;especialista derecho de familia&quot;,&quot;contract&quot;:&quot;indefinido&quot;,&quot;salary&quot;:&quot;4230000&quot;,&quot;level&quot;:10,&quot;seniority&quot;:&quot;Senior&quot;,&quot;skills&quot;:&quot;Postman, Jira, screenplay&quot;,&quot;experience&quot;:&quot;3 años&quot;,&quot;assignmentTime&quot;:&quot;2027-05-19&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;jobProfileId&quot;:2,&quot;jobProfileName&quot;:&quot;dev fullstack&quot;,&quot;originId&quot;:2,&quot;originName&quot;:&quot;Admin&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:74]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:74]</span>
+                <span class="scenario-name">API-CP34 - Actualizar una vacante inexistente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>29</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:74]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.766 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;999&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.76">{
+ &quot;nameRole&quot;: &quot;QC999999&quot;,
+  &quot;description&quot;: &quot;Vacante para QA manual&quot;,
+  &quot;contract&quot;: &quot;indefinido&quot;,
+  &quot;salary&quot;: 4000000,
+  &quot;level&quot;: 12,
+  &quot;seniority&quot;: &quot;Junior&quot;,
+  &quot;skills&quot;: &quot;Cucumber, karate, Postman, Jira&quot;,
+  &quot;experience&quot;: &quot;1 año en QA manual&quot;,
+  &quot;assignmentTime&quot;: &quot;2025-04-10&quot;,
+  &quot;status&quot;: &quot;ACTIVE&quot;,
+  &quot;jobProfile&quot;: 2,
+  &quot;origin&quot;: 1
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.93">17:30:33.777 request:
+1 &gt; PUT http://localhost:8082/api/role/999
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 287
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nameRole&quot;:&quot;QC999999&quot;,&quot;description&quot;:&quot;Vacante para QA manual&quot;,&quot;contract&quot;:&quot;indefinido&quot;,&quot;salary&quot;:4000000,&quot;level&quot;:12,&quot;seniority&quot;:&quot;Junior&quot;,&quot;skills&quot;:&quot;Cucumber, karate, Postman, Jira&quot;,&quot;experience&quot;:&quot;1 año en QA manual&quot;,&quot;assignmentTime&quot;:&quot;2025-04-10&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;jobProfile&quot;:2,&quot;origin&quot;:1}
+
+17:30:33.795 response time in milliseconds: 16
+1 &lt; 404
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;Message&quot;:&quot;There is not entity with that identification&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.Message == &quot;There is not entity with that identification&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:97]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:97]</span>
+                <span class="scenario-name">API-CP35 - Actualizar una vacante con datos incorrectos</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:97]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:97]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.813 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.99">{
+&quot;nameRole&quot;: &quot;string&quot;,
+  &quot;description&quot;: &quot;string&quot;,
+  &quot;contract&quot;: &quot;string&quot;,
+  &quot;salary&quot;: 1000000,
+  &quot;level&quot;: 18,
+  &quot;seniority&quot;: &quot;string&quot;,
+  &quot;skills&quot;: &quot;string&quot;,
+  &quot;experience&quot;: &quot;string&quot;,
+  &quot;assignmentTime&quot;: &quot;2026/50/31&quot;,
+  &quot;status&quot;: &quot;ACTIVE&quot;,
+  &quot;jobProfile&quot;: 1,
+  &quot;origin&quot;: 1
+  }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.116">17:30:33.821 request:
+1 &gt; PUT http://localhost:8082/api/role/1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 229
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nameRole&quot;:&quot;string&quot;,&quot;description&quot;:&quot;string&quot;,&quot;contract&quot;:&quot;string&quot;,&quot;salary&quot;:1000000,&quot;level&quot;:18,&quot;seniority&quot;:&quot;string&quot;,&quot;skills&quot;:&quot;string&quot;,&quot;experience&quot;:&quot;string&quot;,&quot;assignmentTime&quot;:&quot;2026\/50\/31&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;jobProfile&quot;:1,&quot;origin&quot;:1}
+
+17:30:33.830 response time in milliseconds: 8
+1 &lt; 400
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 61
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Connection: close
+The value entered for the field &#39;assignmentTime&#39; is not valid
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:119]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:119]</span>
+                <span class="scenario-name">API-CP36 - Eliminar una vacante existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>25</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:119]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.847 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.121">
+      <div class="step-ref passed">121</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.121">17:30:33.853 request:
+1 &gt; DELETE http://localhost:8082/api/role/2
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:30:33.872 response time in milliseconds: 17
+1 &lt; 204
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref passed">122</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:124]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:124]</span>
+                <span class="scenario-name">API-CP37 - Eliminacion de vacante inexistente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>20</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:124]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:124]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8082/api/role/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:30:33.884 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;888&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.126">17:30:33.889 request:
+1 &gt; DELETE http://localhost:8082/api/role/888
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:30:33.902 response time in milliseconds: 12
+1 &lt; 404
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Mon, 19 May 2025 22:30:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;Message&quot;:&quot;There is not entity with that identification&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.Message == &quot;There is not entity with that identification&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
